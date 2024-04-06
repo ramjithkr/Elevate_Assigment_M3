@@ -1,12 +1,13 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif; 
 }
 
 a{
     text-decoration: none;
+    color: inherit; 
 }
 
 ul{
@@ -22,14 +23,15 @@ ul{
 }
 
 .div-container{
-    background-color: white;
+    background-color: #fff; 
     width: 400px;
-    padding: 40px 35px 40px 35px;
+    padding: 40px 35px;
     border-radius: 10px;
-    box-shadow: 0 25px 50px rgba(12, 15 ,33,0.2);
+    box-shadow: 0 25px 50px rgba(12, 15, 33, 0.2);
 }
 
 h4{
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,16 +48,15 @@ h4{
     padding: 15px 20px;
     background-color: #f2f2f2;
     margin-bottom: 15px;
-    transition: 0.3s;
-
+    transition: background-color 0.3s, border-color 0.3s; 
 }
 
-.div-input:focus{
+.div-input:focus-within{
     background-color: #fff;
     border-color: #000;
 }
 
-#signIn-btn{
+#signIn-btn, #signUp-btn{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,43 +68,20 @@ h4{
     cursor: pointer;
     border: none;
     margin-top: 15px;
-    transition: 0.3s;
+    transition: background-color 0.3s; 
     font-weight: 600;
-    
 }
 
-#signIn-btn:hover{
-    background-color: rgb(131, 131, 404);
+#signIn-btn:hover, #signUp-btn:hover{
+    background-color: rgb(131, 131, 255); 
 }
 
 .div-remember{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin: 15px 0;
     font-size: 14px;
     color: #71717a;
     cursor: pointer;
-    margin-top: 15px;
-}
-
-#signUp-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(131, 131, 204);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    margin-top: 15px;
-    transition: 0.3s;
-    font-weight: 600;
-    
-}
-
-#signUp-btn:hover{
-    background-color: rgb(131, 131, 404);
 }
